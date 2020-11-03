@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+p {
+    font-family: sans-serif;
+    line-height: 0.5em;
+    color: rgb(134, 129, 129);
+    text-indent: 20px;
+    
+}
+
+img {
+    margin: 13px;
+    float: left; 
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    width: 120px;
+    height: 120px;
+
+}
+
+
+.studentContainer {
+    padding-left: 10px; 
+
+}
+
+h1 {
+    font-family: sans-serif; 
+    size: 250px; 
+    text-transform: uppercase;
+    padding-left: 20px;
+
+    
+}
+html, body { height: 100%; }
+
+
+ img {
+    margin: 10px;
+    float: left; 
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    width: 140px;
+    height: 140px;
+
+}
+
+.studentContainer {
+    padding-left: 10px; 
+
+}
+
+
+html, body { height: 100%; } 
+
+.pointerCursor {
+    cursor: pointer;
+
+}
+.i {
+    text-align: right;
+    float: right; 
+}
+ul{
+    list-style-type: none;
+    font-family: sans-serif !important;
+    line-height: 0.5em !important;
+    color: rgb(134, 129, 129) !important;
+    text-indent: 20px !important;
+
+}
+.grades {
+    padding-left: 120px; 
+}
+
+.chip-list {
+    width: 40% !important;
+    color: black !important; 
+}
+.placeholder {
+    font-family: sans-serif !important;
+    color: rgb(134, 129, 129) !important;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: black !important;
+  }
+
