@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AngularApp
 =======
 # OhangaApp
