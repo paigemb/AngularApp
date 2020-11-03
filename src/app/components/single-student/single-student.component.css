@@ -1,0 +1,78 @@
+ /* Styles Sheet for HTML 
+ */
+ 
+ p {
+    font-family: sans-serif  !important ;
+    line-height: 0.5em  !important ;
+    color: rgb(134, 129, 129)  !important ;
+    text-indent: 20px  !important ;
+    font-size: medium;
+    padding: 3px  !important ;
+    
+}
+
+
+ img {
+    margin: 10px;
+    float: left; 
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    width: 140px;
+    height: 140px;
+
+}
+
+
+.studentContainer {
+    padding-left: 10px; 
+
+}
+
+h1{
+    font-family: sans-serif ; 
+    font-weight: bolder   !important ;
+    font-size: xx-large  !important ; 
+    text-transform: uppercase  !important ;
+    padding-left: 30px  !important ;
+
+    
+}
+.pointerCursor {
+    cursor: pointer;
+
+}
+i {
+    text-align: right;
+    float: right; 
+}
+ul{
+    list-style-type: none;
+    font-family: sans-serif !important;
+    line-height: 0.5em !important;
+    color: rgb(134, 129, 129) !important;
+    text-indent: 35px !important;
+    font-size: medium !important;
+
+}
+
+.grades {
+    padding-left: 120px; 
+}
+
+.chip-list {
+    width: 40% !important;
+    color: black !important; 
+}
+.placeholder {
+    font-family: sans-serif !important; 
+    color: rgb(134, 129, 129) !important;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: black !important;
+  }
+  .mat-form-field {
+      padding-top: 30px !important;
+
+  }
+
+ 

@@ -1,0 +1,62 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+<html>
+
+<div class = "container " >
+    <div class = "clickbutton pointerCursor" (click) = "isHidden = !isHidden" (click) = "isHidden2 = !isHidden2">
+    <div class ="plus-icon" [hidden] = "isHidden2">
+        <i class="icon-plus-sign"  style="float: right;"></i>
+    </div>
+    <div class="minus-icon" [hidden]="isHidden">
+        <i class="icon-minus-sign" style="float:right"></i> 
+    </div>
+</div>
+    <div class="student-container">
+                    <img src = "{{student.pic}}" >
+                    <div class = "info">
+                    <h1> {{student.firstName}} {{student.lastName}} </h1> 
+                    <p> Email: {{student.email}}</p>
+                    <p> Company: {{student.company}} </p>
+                    <p> Skill: {{student.skill}}</p>
+                    <p> Average: {{findAverage(student.grades)}}% </p>
+                </div>
+            </div>
+            <div class="grades" [hidden]="isHidden">
+                <br>
+                <br>
+                <ul>
+                    <li> Test 1: &nbsp; {{student.grades[0]}}% </li>
+                    <li> Test 2: &nbsp; {{student.grades[1]}}% </li>
+                    <li> Test 3: &nbsp; {{student.grades[2]}}% </li>
+                    <li> Test 4: &nbsp; {{student.grades[3]}}% </li>
+                    <li> Test 5: &nbsp; {{student.grades[4]}}% </li>
+                    <li> Test 6: &nbsp; {{student.grades[5]}}% </li>
+                    <li> Test 7: &nbsp; {{student.grades[6]}}% </li>
+                    <li> Test 8: &nbsp; {{student.grades[7]}}% </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <mat-form-field class="chip-list">
+                        <mat-placeholder class="placeholder">New Tag...</mat-placeholder>
+                        <mat-chip-list #chipList aria-label="Tag selection">
+                          <mat-chip *ngFor="let tag of tags" [selectable]="selectable"
+                                   [removable]="removable" (removed)="remove(tag)">
+                            {{tag.name}}
+                            <mat-icon matChipRemove *ngIf="removable">X</mat-icon>
+                          </mat-chip>
+                          <input [(ngModel)] = "addedTag"
+                                 (keyup.enter)="addTag(student.id)"
+                                 [matChipInputFor]="chipList"
+                                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                 [matChipInputAddOnBlur]="addOnBlur"
+                                 (matChipInputTokenEnd)="add($event)">
+                               
+                        </mat-chip-list>
+                      </mat-form-field>
+            </div>
+            </div>
+            <hr style = "color: rgb(236, 231, 231); margin: 20px ;">
+        </html>
+
+    
