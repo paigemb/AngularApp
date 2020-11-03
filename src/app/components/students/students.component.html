@@ -1,0 +1,14 @@
+<div class= "form-group">
+    <br>
+    <input type="text" class="form-control" placeholder="Search By Name"
+    style ="width:100%" [(ngModel)] ="searchTerm"/>
+    <input type="text" class="form-control" placeholder="Search By Tags"
+    style ="width:100%" [(ngModel)] ="searchTag"/>
+    <br>
+    <br>
+
+<app-single-student *ngFor="let student of students |studentFilter:searchTerm |tagFilter:searchTag"  [student] = "student" >
+</app-single-student>
+
+</div>
+
